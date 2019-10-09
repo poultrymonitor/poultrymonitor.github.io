@@ -99,7 +99,7 @@ Settings</a>
           <span>Inventory</span>
         </a>
         <div id="collapseThree" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
+           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Inventory</h6>
             <a class="collapse-item" href="inventory.html">View Inventory</a>
             <a class="collapse-item" href="addbreed.html">Add Breed</a>
@@ -185,146 +185,71 @@ Settings</a>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+<h1 class="h3 mb-4 text-gray-800"><a href="#" class="btn btn-info btn-circle" >
+          <i class="fas fa-info fa-2xstyle="font-size: 64px;"></i>
 
+                  </a> Chicken Breed Information</h1>
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Cage Number: 
-  </button>
-  <div class="dropdown-menu btn" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">1</a>
-    <a class="dropdown-item" href="#">2</a>
-    <a class="dropdown-item" href="#">3</a>
-  </div>
-</div>
-            <h3 class="h3 mb-0 text-gray-800">Dashboard</h3>
+  
 
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Download the Mobile Application (.apk)</a>
-          </div>
 
-          <!-- Content Row -->
-          <div class="row">
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Battery Capacity</div>
-        <div id="batterycapacity" class="h5 mb-0 font-weight-bold text-gray-800">Gathering...</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-car-battery text-gray-300" style="font-size: 64px;"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1" >Solar Panel Capacity</div>
-                      <div id="solarcapacity" class="h5 mb-0 font-weight-bold text-gray-800 " >Gathering...</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-solar-panel fa-2x text-gray-300" style="font-size: 64px;"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Interval Time</div>
-                      <div id="intervalstatus" class="h5 mb-0 font-weight-bold text-gray-800 " >Gathering...</div>
-                    </div>
-                    <div class="col-auto">
-                  <i class="far fa-clock fa-2x text-gray-300" style="font-size: 64px;"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+           
           <!-- Content Row -->
 
           <div class="row">
-
-            <!-- Area Chart -->
-            <div class="col-xl-6 col-md-6 mb-4">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Total Feeding Consumption</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                      <div class="dropdown-header">Actions</div>
-                      <a class="dropdown-item" href="https://thingspeak.com/channels/816353/field/1.csv">Download Report</a>
-                      
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-                  <iframe width="530" height="250" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/816353/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&title=Feeds+Consumption&type=bar"></iframe>
-
-                </div>
-              </div>
-            </div>
-
-            <!-- Area Chart -->
-            <div class="col-xl-6 col-md-6 mb-4">
-              <div class="card shadow mb-4">
-                <!-- Card Header - Dropdown -->
-                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Total Water Consumption</h6>
-                  <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" aria-labelledby="dropdownMenuLink">
-                       <div class="dropdown-header">Actions</div>
-                      <a class="dropdown-item" href="https://thingspeak.com/channels/816353/field/2.csv">Download Report</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Card Body -->
-                <div class="card-body">
-<iframe width="530" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/816353/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=999&title=Water+Consumption&type=bar"></iframe>
-
-                </div>
-              </div>
-            </div>
-      
-
-              <!-- Approach -->
-                          <div class="col-xl-12 col-md-6 mb-4">
+            <div class="col-lg-6 ">
 
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">About</h6>
+                  <h6 class="m-0 font-weight-bold text-primary"><b>Add New Breed</b></h6>
                 </div>
                 <div class="card-body">
-                  <p>This website is for analyzing, monitoring and controlling purposes only for the Capstone Project of <b><a href="https://www.facebook.com/adrian.batuto" target="_blank" rel="noopener noreferrer">Adrian Batuto</a>, <a href="https://www.facebook.com/profile.php?id=100000555994626&ref=br_rs" target="_blank" rel="noopener noreferrer">Paolo Dela Cruz</a> & <a href="#">Timothy Dejeron</a></b></p>
-                  <p class="mb-0">Before working with this Website you should be familiar with the controls given to you by the Developers.</p>
-                </div>
+                  <p><i class="fas fa-info-circle"></i>This is for entering a new breed of chicken in the <code>Database</code></p>
+            
+            <br>
+            <div class="input-field">
+      <input placeholder="Add new Chicken Breed" id="insertinterval" class="form-control form-control-lg" type="text"></input>
+  </div>
+<br>
+                  <a href="#" class="btn btn-warning btn-icon-split ">
+                    <span class="icon text-white-100 ">
+
+<i class="fas fa-sync"></i>
+  <button id="addinterval" class="btn waves-effect waves-light" type="submit" name="action" style="color:white;" onclick="submitClick()">Add Cage</button>
+
+
+                  <span>
+                  </a>
+                  
               </div>
 
             </div>
           </div>
 
+
+
+<div class="col-xl-6 col-md-6 mb-4">
+<table class=" table  table-bordered  table-striped" style="width:auto%" id="ex-table">
+    <thead class="thead-light">
+
+  <tr id="tr">
+    <th>List of Chicken Breeds:</th>
+  </tr>
+</thead>
+
+ </table> 
+
+</div>
+
+
+
+
+
+
+
+
+          
+          </div>
         </div>
         <!-- /.container-fluid -->
 

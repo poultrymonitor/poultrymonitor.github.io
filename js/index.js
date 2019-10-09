@@ -213,3 +213,18 @@ firebaseRef5.child("feedinterval").set(inputinterval);
 
 }
 
+
+//viewing new breed
+var breednames =  firebase.database();
+    breednames.ref().on('value', function(datasnapshot){
+        if(datasnapshot.exists()){
+            var content = '';
+            datasnapshot.forEach(function(data){
+                var val = data.val();
+                content +='<tr>';
+                content += '<td>' + val.chickenbreedlist + '</td>';
+                content += '</tr>';
+            });
+            $('#ex-table').append(content);
+        }
+    });
