@@ -215,16 +215,52 @@ firebaseRef5.child("feedinterval").set(inputinterval);
 
 
 //viewing new breed
-var breednames =  firebase.database();
-    breednames.ref().on('value', function(datasnapshot){
-        if(datasnapshot.exists()){
-            var content = '';
-            datasnapshot.forEach(function(data){
-                var val = data.val();
-                content +='<tr>';
-                content += '<td>' + val.chickenbreedlist + '</td>';
-                content += '</tr>';
-            });
-            $('#ex-table').append(content);
-        }
-    });
+var database = firebase.database().ref().child('chickenbreed');
+database.on('value', function(datasnapshot){
+    if(datasnapshot.exists()){
+        var content = [];
+        datasnapshot.forEach(function(data){
+
+      var chickenbreed = data.val();
+	
+            content += '<tr>';
+            content += '<td>' + chickenbreed + '</td>';
+            content += '<tr>';
+
+        });
+        $('#ex-table').append(content);
+    }
+});
+
+//viewing new inventory
+var database = firebase.database().ref().child('poultrymonitor-d9604');
+
+database.on('value', function(datasnapshot){
+    if(datasnapshot.exists()){
+        var content = [];
+        datasnapshot.forEach(function(data){
+
+      var cagelist = data.val().cagelist;
+      var chickenage = data.val().chickenage;
+      var chickenbreed = data.val().chickenbreed;
+      var chickeninventory = data.val().chickeninventory;
+      var feedstatus = data.val().feedstatus;
+      var waterstatus = data.val().waterstatus;
+      var feedlevel = data.val().feedlevel;
+      var waterlevel = data.val().waterlevel;
+
+            content += '<tr>';
+            content += '<td>' + cagelist + '</td>';
+            content += '<td>' + chickenage + '</td>';
+            content += '<td>' + chickenbreed + '</td>';
+            content += '<td>' + chickeninventory + '</td>';
+            content += '<td>' + feedstatus + '</td>';
+            content += '<td>' + waterstatus + '</td>';
+            content += '<td>' + feedlevel + '</td>';
+            content += '<td>' + waterlevel + '</td>';
+            content += '<tr>';
+
+        });
+        $('#ex-table1').append(content);
+    }
+});

@@ -99,7 +99,7 @@ Settings</a>
           <span>Inventory</span>
         </a>
         <div id="collapseThree" class="collapse" aria-labelledby="headingUtilities" data-parent="#accordionSidebar">
-          <div class="bg-white py-2 collapse-inner rounded">
+           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Custom Inventory</h6>
             <a class="collapse-item" href="inventory.html">View Inventory</a>
             <a class="collapse-item" href="addbreed.html">Add Breed</a>
@@ -185,117 +185,71 @@ Settings</a>
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
+<h1 class="h3 mb-4 text-gray-800"><a href="#" class="btn btn-info btn-circle" >
+          <i class="fas fa-info fa-2xstyle="font-size: 64px;"></i>
 
+                  </a> Chicken Breed Information</h1>
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <div class="dropdown">
+  
 
-  <div class="dropdown-menu btn" aria-labelledby="dropdownMenuButton">
-    <a class="dropdown-item" href="#">1</a>
-    <a class="dropdown-item" href="#">2</a>
-    <a class="dropdown-item" href="#">3</a>
+
+           
+          <!-- Content Row -->
+
+          <div class="row">
+            <div class="col-lg-6 ">
+
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary"><b>Add New Breed</b></h6>
+                </div>
+                <div class="card-body">
+                  <p><i class="fas fa-info-circle"></i>This is for entering a new breed of chicken in the <code>Database</code></p>
+            
+            <br>
+            <div class="input-field">
+      <input placeholder="Add new Chicken Breed" id="insertinterval" class="form-control form-control-lg" type="text"></input>
   </div>
+<br>
+                  <a href="#" class="btn btn-warning btn-icon-split ">
+                    <span class="icon text-white-100 ">
+
+<i class="fas fa-sync"></i>
+  <button id="addinterval" class="btn waves-effect waves-light" type="submit" name="action" style="color:white;" onclick="submitClick()">Add Cage</button>
+
+
+                  <span>
+                  </a>
+                  
+              </div>
+
+            </div>
+          </div>
+
+
+
+<div class="col-xl-6 col-md-6 mb-4">
+<table class=" table  table-bordered  table-striped" style="width:auto%" id="ex-table">
+    <thead class="thead-light">
+
+  <tr id="tr">
+    <th>List of Chicken Breeds:</th>
+  </tr>
+</thead>
+
+ </table> 
+
 </div>
+
+
+
+
+
+
+
+
           
           </div>
-
-          <!-- Content Row -->
-          <div class="row">
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-bottom-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Overall Water Level</div>
-        <div id="watercontainer" class="h5 mb-0 font-weight-bold text-gray-800">Gathering...</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-water rtext-gray-300" style="font-size: 64px;"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-bottom-success shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1" >Overall Feed Level</div>
-                      <div id="foodcontainer" class="h5 mb-0 font-weight-bold text-gray-800 " >Gathering...</div>
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-utensils fa-2x text-gray-300" style="font-size: 64px;"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-bottom-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Overall Water Status</div>
-                      <div id="waterrstatus" class="h5 mb-0 font-weight-bold text-gray-800 " >Gathering...</div>
-                    </div>
-                    <div class="col-auto">
-                  <i class="fas fa-info fa-2x text-gray-300" style="font-size: 64px;"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-                 <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-                <div class="card border-bottom-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Overall Feed Status</div>
-                      <div id="foodstatus" class="h5 mb-0 font-weight-bold text-gray-800 " >Gathering...</div>
-                    </div>
-                    <div class="col-auto">
-                  <i class="fas fa-info fa-2x text-gray-300" style="font-size: 64px;"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-          <!-- Content Row -->
-
-
-          </div>
-          <div class="row">
-
-<div class="col-xl-12 col-md-6 mb-4">
-<table class=" table  table-bordered  table-striped"  id="ex-table1">
-    <thead class="thead-light">
-  <tr id="tr">
-      <th >Cage Name</th>
-      <th >Chicken Age</th>
-      <th >Chicken Breed</th>
-      <th>Chicken Count</th>
-      <th >Water Level</th>
-      <th >Food Level</th>
-      <th >Water Status</th>
-      <th >Food Status</th>
-
-    </tr>
-  </thead>
-  
-</table>
-
-</div>
-
-</div>
         </div>
         <!-- /.container-fluid -->
 
